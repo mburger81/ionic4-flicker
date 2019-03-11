@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  gws: any[] = [
+    {description: 'Lanthings ABC', serialNumber: 123456789},
+    {description: 'Lanthings DEF', serialNumber: 468467956}
+  ];
+
+
+  public discover() {
+    console.log('discover');
+    this.gws = [
+      {description: 'Lanthings ABC', serialNumber: 123456789},
+      {description: 'Lanthings DEF', serialNumber: 468467956}
+    ];
+  }
 }
